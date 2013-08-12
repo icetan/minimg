@@ -1,0 +1,24 @@
+{
+  "name": "minimg",
+  "version": "0.0.1",
+  "description": "Browser client image scale down.",
+  "author": "Christopher Fredén <c.freden@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icetan/minimg.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://raw.github.com/icetan/minimg/master/LICENSE"
+  }],
+  "engine": {
+    "node": ">=0.6.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  },
+  "scripts": {
+    "prepublish": "node_modules/.bin/coffee -c index.coffee"
+  },
+  "files": ["index.js", "README.md", "LICENSE"]
+}
