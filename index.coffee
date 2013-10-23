@@ -4,7 +4,7 @@
   else
     window.minimg = obj
 ) (input, maxWidth, maxHeight, callback) ->
-  if not (input instanceof HTMLInputElement)
+  if not input.files
     callback = maxWidth
     { input, max: { width:maxWidth, height:maxHeight }, crop } = input
 
