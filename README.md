@@ -9,7 +9,7 @@ Scale your images in browser before upload.
 <script>
   document.getElementById('image').onchange = function() {
     minimg(this, 600, 400, function(canvas) {
-      console.log(canvas.getDataURL('image/jpeg'));
+      console.log(canvas.toDataURL('image/jpeg'));
     });
   };
 </script>
