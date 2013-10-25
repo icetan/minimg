@@ -18,7 +18,8 @@
     "coffee-script": "~1.6.3"
   },
   "scripts": {
-    "prepublish": "coffee -c index.coffee"
+    "prepublish": "coffee -c index.coffee",
+    "watch": "coffee -wc index.coffee"
   },
   "files": ["index.js", "README.md", "LICENSE"]
 }
