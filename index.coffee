@@ -58,5 +58,5 @@
   img.onload = -> callback null, (if opt then scaleImage(opt) else scaleImage)
   reader = new FileReader()
   reader.onload = (e) -> img.src = e.target.result
-  reader.readAsDataURL input.files[0]
+  reader.readAsDataURL(if 'files' of input then input.files[0] else input)
   return
